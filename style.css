@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  color: #191a23;
+  background-color: white;
+}
+
+h1 {
+      font-weight: 600;
+    }
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 2px 10px rgb(0,0,0,0.05);
+  z-index: 999;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #191a23;
+  font-weight: 500;
+}
+
+.quote-btn {
+ height: 56px;                /* fixes height */
+  padding: 0 36px;             /* horizontal space */
+  background-color: white;
+  color: #191a23;
+  border: 1px solid #191a23;
+  border-radius: 16px;         /* chunky corner, not full round */
+  font-size: 20px;
+  font-weight: 200;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  line-height: 1;              /* prevents vertical stretching */;
+}
+
+.quote-btn:hover {
+  background-color: black;
+  color:white;
+}
+
+.hero {
+ position: relative;
+  padding: 100px 32px;
+  background-color: #f3f3f3; /* or white depending on design */
+}
+
+.hero-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.hero-left {
+  flex: 1;
+  font-size:x-large;
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-logo {
+  height: 600px;
+  width: 600px;
+}
+
+.hero-text {
+  max-width: 600px;
+  text-align: flex;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-family: "Space Grostesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-family: "Space Grostesk",sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.cta-button {
+display: inline-flex;
+  height: 56px;
+  padding: 0 36px;
+  background-color: #191a23;
+  color: white;
+  border:2px solid #191a23;
+  border-radius: 16px; /* Rounded corners, not fully pill */
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  line-height: 56px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: white;
+  color:black ;
+  border: 1px solid ;  /* Keep border on hover */
+}
